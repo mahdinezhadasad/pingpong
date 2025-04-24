@@ -75,7 +75,7 @@ Real-world readiness (multi-process, CLI, testability)
 
 
 
-### ✅ 2. Multi-Process (WebSocket Version) *(Bonus)*
+### ✅ 2. Multi-Process (WebSocket Version) 
 
 > 🧠 **Bonus implementation** using Java WebSockets (JSR 356) — modern, asynchronous, and browser-compatible communication.
 
