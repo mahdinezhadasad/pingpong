@@ -84,3 +84,13 @@ touch README.md
 git add README.md
 git commit -m "Add project README"
 
+### ✅ 2. Multi-Process (WebSocket Version) *(Bonus)*
+
+> 🧠 **Bonus implementation** using Java WebSockets (JSR 356) — modern, asynchronous, and browser-compatible communication.
+
+This version uses:
+- A WebSocket **server** to represent the `Responder`
+- A WebSocket **client** to represent the `Initiator`
+- Communication over `ws://localhost:8080/pingpong`
+
+
