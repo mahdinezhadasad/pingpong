@@ -11,20 +11,39 @@ It includes:
 - ✅ Unit tests with JUnit 5
 
 ---
+pingpong/
+├── src/
+│   ├── main/
+│   │   └── java/
+│   │       └── com/
+│   │           └── example/
+│   │               └── pingpong/
+│   │                   ├── adapters/
+│   │                   │   ├── cli/
+│   │                   │   │   ├── InitiatorMain.java          # Socket client entry
+│   │                   │   │   ├── ResponderMain.java          # Socket server entry
+│   │                   │   │   └── Main.java                   # Single-process in-memory version
+│   │                   │   └── memory/
+│   │                   ├── domain/
+│   │                   │   ├── Player.java                     # Core logic
+│   │                   │   ├── Base64EncodingStrategy.java     # Strategy: Base64
+│   │                   │   ├── JsonMessageStrategy.java        # Strategy: JSON
+│   │                   │   ├── SimpleMessageStrategy.java      # Strategy: Simple text
+│   │                   │   └── ports/
+│   │                   │       ├── MessagePort.java            # Output port interface
+│   │                   │       └── MessageStrategy.java        # Strategy interface
+│   │                   └── SocketMessageAdapter.java           # Socket adapter implementing MessagePort
+│   └── test/
+│       └── java/
+│           └── com/
+│               └── example/
+│                   └── pingpong/
+│                       └── domain/
+│                           └── PlayerTest.java                # Unit tests for Player + Strategies
+├── pom.xml                                                  # Maven config
+└── README.md                                                 # Documentation
 
-## 📦 Project Structure
 
-src/main/java/com/example/pingpong/
-├── adapters/
-│   ├── cli/
-│   │   ├── Main.java            
-│   │   ├── InitiatorMain.java   
-│   │   └── ResponderMain.java    
-│   └── memory/
-│  
-│      
-├── domain/
-│   └── Player.java, MessagePort.java,MessageStrategy.java etc.
 
 
 
