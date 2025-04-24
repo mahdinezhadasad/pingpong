@@ -74,15 +74,6 @@ Real-world readiness (multi-process, CLI, testability)
 
 
 
----
-
-## ✅ How to Add This to Your Project
-
-1. Create a new file in your project root:
-```bash
-touch README.md
-git add README.md
-git commit -m "Add project README"
 
 ### ✅ 2. Multi-Process (WebSocket Version) *(Bonus)*
 
